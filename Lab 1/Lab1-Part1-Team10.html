@@ -1,1 +1,105 @@
 <!-- HTML code for Lab 1 Part 1 should go here -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Electronics-Center</title>
+    <h1>Electronics Center</h1>
+  </head>
+  <body>
+    <div class="type-list">
+      <label for="type">Type:</label>
+      <select name="type" id="type">
+        <option value="0">Laptop</option>
+        <option value="1">Notebook</option>
+        <option value="2">Tablet</option>
+        <option value="3">Cellphone</option>
+      </select>
+    </div>
+
+    <div class="action-list">
+      <label for="actions">Type:</label>
+      <select name="actions" id="actions">
+        <option value="0">Archive</option>
+        <option value="1">Edit</option>
+        <option value="2">Delete</option>
+        <option value="3">Collection</option>
+      </select>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          <th>Image</th>
+          <th>Name</th>
+          <th>Company</th>
+          <th>Year</th>
+          <th>Type</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><input type="radio" name="device"></td>
+          <td>
+            <img
+              src="https://st-troy.mncdn.com/mnresize/1500/1500/Content/media/ProductImg/original/mpwp3tua-apple-iphone-14-256gb-mavi-mpwp3tua-637986832343472449.jpg"
+              width="50"
+              height="50"
+            />
+          </td>
+          <td>iPhone 14</td>
+          <td>Apple</td>
+          <td>2022</td>
+          <td>Cellphone</td>
+          <td>
+            <button>Archive</button>
+            <button>Edit</button>
+            <button>Delete</button>
+            <button>Collection</button>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="radio" name="device"></td>
+          <td>
+            <img
+              src="https://m.media-amazon.com/images/I/71kBlSKi3eL._AC_SL1500_.jpg"
+              width="50"
+              height="50"
+            />
+          </td>
+          <td>Surface Pro 7</td>
+          <td>Microsoft</td>
+          <td>2019</td>
+          <td>Laptop</td>
+          <td>
+            <button>Archive</button>
+            <button>Edit</button>
+            <button>Delete</button>
+            <button>Collection</button>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="radio" name="device"></td>
+          <td>
+            <img
+              src="https://m.media-amazon.com/images/I/31NJHAAviGL._AC_.jpg"
+              width="50"
+              height="50"
+            />
+          </td>
+          <td>iPad (9th Generation)</td>
+          <td>Apple</td>
+          <td>2021</td>
+          <td>Tablet</td>
+          <td>
+            <button>Archive</button>
+            <button>Edit</button>
+            <button>Delete</button>
+            <button>Collection</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
