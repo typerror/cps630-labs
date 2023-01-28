@@ -1,1 +1,64 @@
 /* CSS for Lab 1 Part 1 should go here */
+/* CSS for Lab 1 Part 1 should go here */
+* {
+    margin: 0;
+}
+
+.heading {
+    font-family: 'Unbounded', sans-serif;
+    text-align: center;
+    margin: 35px;
+}
+
+.type-list, .action-list, #type, #actions, table {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#type, #actions {
+    background-color: #fff;
+    border: 1px solid black;
+    padding: 8px;
+    font-size: 1em;
+}
+
+button {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    border: 1px solid #3e8ae2;
+    background-color: #3e8ae2;
+    padding: 10px;
+    margin: 2px;
+    border-radius: 10px;
+    color: beige;
+    transition: all 150ms ease;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid #3e8ae2;
+    color: black
+}
+
+td, th {
+    padding: 10px;
+}
+
+th {
+    background-color: #e2e1e1;
+}
+
+table {
+    margin: 30px 0 30px 0;
+    text-align: center;
+    width: 100%;
+}
+
