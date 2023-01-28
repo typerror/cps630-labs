@@ -1,1 +1,134 @@
-<!-- HTML code for Lab 1 Part 2 should go here -->
+<!-- CPS630 Lab 1 Part 2 -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,400;1,700&family=Unbounded:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./Lab1-Part1-Team10.css" />
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $("img").hover(function() {
+            $(this).animate({
+                width: '200px',
+                height: '200px'
+            }, 400, () => {});
+            $(this).parent().parent().css("background-color", "lightblue");
+        }, function() {
+            $(this).animate({
+                width: '50px',
+                height: '50px'
+            }, 400, () => {});
+            $(this).parent().parent().css("background-color", "white");
+        });
+      });
+    </script>
+
+    <title>Electronics-Center</title>
+    <h1 class="heading">Electronics Center</h1>
+  </head>
+  <body>
+    <div class="container">
+      <div class="action-list">
+        <label for="actions">Action:</label>
+        <select name="actions" id="actions">
+          <option value="0">Archive</option>
+          <option value="1">Edit</option>
+          <option value="2">Delete</option>
+          <option value="3">Collection</option>
+        </select>
+      </div>
+
+      <div class="type-list">
+        <label for="type">Type:</label>
+        <select name="type" id="type">
+          <option value="0">Laptop</option>
+          <option value="1">Notebook</option>
+          <option value="2">Tablet</option>
+          <option value="3">Cellphone</option>
+        </select>
+      </div>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          <th>Image</th>
+          <th>Name</th>
+          <th>Company</th>
+          <th>Year</th>
+          <th>Type</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><input type="radio" name="device" /></td>
+          <td>
+            <img
+              src="https://st-troy.mncdn.com/mnresize/1500/1500/Content/media/ProductImg/original/mpwp3tua-apple-iphone-14-256gb-mavi-mpwp3tua-637986832343472449.jpg"
+              width="50"
+              height="50"
+            />
+          </td>
+          <td>iPhone 14</td>
+          <td>Apple</td>
+          <td>2022</td>
+          <td>Cellphone</td>
+          <td>
+            <a href="#"><button>Archive</button></a>
+            <a href="#"><button>Edit</button></a>
+            <a href="#"><button>Delete</button></a>
+            <a href="#"><button>Collection</button></a>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="radio" name="device" /></td>
+          <td>
+            <img
+              src="https://m.media-amazon.com/images/I/71kBlSKi3eL._AC_SL1500_.jpg"
+              width="50"
+              height="50"
+            />
+          </td>
+          <td>Surface Pro 7</td>
+          <td>Microsoft</td>
+          <td>2019</td>
+          <td>Laptop</td>
+          <td>
+            <a href="#"><button>Archive</button></a>
+            <a href="#"><button>Edit</button></a>
+            <a href="#"><button>Delete</button></a>
+            <a href="#"><button>Collection</button></a>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="radio" name="device" /></td>
+          <td>
+            <img
+              src="https://m.media-amazon.com/images/I/31NJHAAviGL._AC_.jpg"
+              width="50"
+              height="50"
+            />
+          </td>
+          <td>iPad (9th Generation)</td>
+          <td>Apple</td>
+          <td>2021</td>
+          <td>Tablet</td>
+          <td>
+            <a href="#"><button>Archive</button></a>
+            <a href="#"><button>Edit</button></a>
+            <a href="#"><button>Delete</button></a>
+            <a href="#"><button>Collection</button></a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
