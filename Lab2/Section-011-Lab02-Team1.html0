@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Lab02</title>
+</head>
+<body>
+
+    <!-- BUTTONS FOR SAVING/CLEARING WORK -->
+    <div class="buttons">
+        <button>Save Record</button>
+        <button>Clear Record</button>
+    </div>
+
+    <!-- HEADING + DESCRIPTION-->
+    <div class="heading">
+        <h2>Art Work Database</h2>
+        <p>type of artwork: <br> amount: <br> age:</p>
+    </div>
+
+    <div class="container">
+        <!-- FORM FOR SELECTING ARTWORK -->
+        <form action="">
+            <div class="inp">
+                <label for="genre">Genre</label>
+                <select name="genre" id="genre">
+                    <option value="">Abstract</option>
+                    <option value="">Baroque</option>
+                    <option value="">Gothic</option>
+                    <option value="">Renaissance</option>
+                </select>
+            </div>
+            <div class="inp">
+                <label for="genre">Type</label>
+                <select name="type" id="genre">
+                    <option value="">Painting</option>
+                    <option value="">Sculpture</option>
+                </select>
+            </div>
+            <div class="inp">
+                <label for="genre">Subject</label>
+                <select name="subject" id="genre">
+                    <option value="">Landscape</option>
+                    <option value="">Portrait</option>
+                </select>
+            </div>
+            <div class="inp">
+                <label for="genre">Specification</label>
+                <select name="specification" id="genre">
+                    <option value="">Commercial</option>
+                    <option value="">Non-Commercial</option>
+                    <option value="">Derivative</option>
+                    <option value="">Non-Derivative</option>
+                </select>
+            </div>
+            <div class="inp">
+                <label for="genre">Year</label>
+                <input type="text" name="year">
+            </div>
+            <div class="inp">
+                <label for="genre">Museum</label>
+                <input type="text" name="museum">
+            </div>
+        </form>
+
+        <!-- BOX FOR ARTWORK DISPLAY -->
+        <div class="box">
+            artwork
+        </div>
+    </div>
+
+</body>
+</html>
